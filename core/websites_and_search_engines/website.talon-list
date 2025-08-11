@@ -10,9 +10,51 @@ dropbox: https://dropbox.com/
 google: https://www.google.com/
 google calendar: https://calendar.google.com
 google maps: https://maps.google.com/
+google meet: https://meet.google.com/
 google scholar: https://scholar.google.com/
 gmail: https://mail.google.com/
 github: https://github.com/
 gist: https://gist.github.com/
 wikipedia: https://en.wikipedia.org/
 youtube: https://www.youtube.com/
+linear: https://linear.app/develo/team/DEV/cycle/active
+linear cycle: https://linear.app/develo/team/DEV/cycle/active
+notion: https://notion.so/
+health gorilla docks: https://developer.healthgorilla.com/docs
+health gorilla sandbox: https://sandbox.healthgorilla.com/
+redwood docks: https://redwoodjs.com/docs/introduction
+loom: https://www.loom.com
+flight control: https://app.flightcontrol.dev/projects
+datadog: https://us5.datadoghq.com/apm/home
+demo bull board: https://d2hy7cmgzv7u0g.cloudfront.net/queues
+demo admin: https://d2hy7cmgzv7u0g.cloudfront.net/admin
+demo app: https://demo.letsdevelo.com/
+demo medplum: https://app.medplum-test.letsdevelo.com
+prod bull board: https://dqesqob865oni.cloudfront.net/queues
+prod admin: https://dqesqob865oni.cloudfront.net/admin
+prod app: https://app.letsdevelo.com/
+prod medplum: https://app.medplum.letsdevelo.com
+local bull board: http://localhost:8912/queues
+local admin: http://localhost:8912/admin
+local app: http://localhost:8910/
+local medplum: http://localhost:3000
+medplum docks: https://www.medplum.com/docs
+medplum reference: https://www.medplum.com/docs/api
+fire: https://hl7.org/fhir/R4/
+chat GPT: https://chat.openai.com/
+claude: https://claude.ai/
+spotify: https://open.spotify.com/
+figma: https://www.figma.com/
+candid docs: https://docs.joincandidhealth.com
+candid client: https://github.com/candidhealth/candid-node
+candid: https://app.joincandidhealth.com
+candid staging: https://app-staging.joincandidhealth.com
+doctor first docs: https://integration.drfirst.com/
+gemini: https://gemini.google.com/app
+playwright: http://localhost:3456/
+playwright docs: https://playwright.dev/docs/intro
+lang fuse: https://us.cloud.langfuse.com/project/cmbpgpllj059had076pfazk3f
+lang fuse docs: https://langfuse.com/docs
+rippling: https://app.rippling.com/dashboard
+documo: https://getdevelo.documo.com/
+documo docs: https://docs.documo.com/

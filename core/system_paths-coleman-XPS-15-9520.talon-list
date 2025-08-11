@@ -1,0 +1,17 @@
+list: user.system_paths
+hostname: coleman-XPS-15-9520
+-
+user: /home/coleman
+desktop: /home/coleman/Desktop
+desk: /home/coleman/Desktop
+documents: /home/coleman/Documents
+docks: /home/coleman/Documents
+downloads: /home/coleman/Downloads
+music: /home/coleman/Music
+pictures: /home/coleman/Pictures
+videos: /home/coleman/Videos
+talon home: /home/coleman/.talon
+talon recordings: /home/coleman/.talon/recordings
+talon user: /home/coleman/.talon/user
+home: /home/coleman
+develo: /home/coleman/code/develo-emr

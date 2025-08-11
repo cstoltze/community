@@ -97,3 +97,12 @@ new scratch (shell | window):
 murder:
     user.deprecate_command("2023-02-04", "murder", "win kill")
     app.window_close()
+
+##
+# Marks
+##
+(win | window) mark <user.word>: user.system_command("i3-msg mark {word}")
+(win | window) clear marks: user.system_command("i3-msg unmark")
+(win | window) focus [mark] <user.word>:
+    user.system_command('i3-msg [con_mark="{word}"] focus')
+(win | window) focus alert: user.system_command("i3-msg [urgent=latest] focus")

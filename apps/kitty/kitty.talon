@@ -1,12 +1,12 @@
 app: kitty
 and not win.title: /VIM/
 -
-
 tag(): terminal
+tag(): user.generic_unix_shell
+tag(): user.redwood
+tag(): user.git
 
-###
-# Kitty-specific
-###
+#Kitty-specific
 kitty config edit: key(ctrl-shift-f2)
 kitty config reload: key(ctrl-shift-f5)
 

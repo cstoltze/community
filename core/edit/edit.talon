@@ -76,5 +76,7 @@ redo that: edit.redo()
 # Save
 file save: edit.save()
 file save all: edit.save_all()
+disk: edit.save()
+disk all: edit.save_all()
 
 [go] line mid: user.line_middle()

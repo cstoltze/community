@@ -43,7 +43,7 @@ class Actions:
 
     def i3wm_restart():
         """Restart the window manager"""
-        subprocess.check_call(("i3-msg", "restart"))
+        subpfocusrocess.check_call(("i3-msg", "restart"))
 
     def i3wm_layout(layout: Optional[str] = None):
         """Change to specified layout. Toggle split if unspecified."""

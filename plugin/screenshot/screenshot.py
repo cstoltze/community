@@ -37,10 +37,12 @@ class Actions:
         actions.user.screenshot_rect(win.rect, title=win.app.name)
 
     def screenshot_selection():
-        """Triggers an application that is capable of taking a screenshot of a portion of the screen"""
+        """Triggers an application that is capable of taking a screenshot of a portion of the screen and saves it to the pictures folder using maim on Linux."""
+
 
     def screenshot_selection_clip():
-        """Triggers an application that is capable of taking a screenshot of a portion of the screen and adding to clipboard"""
+        """Triggers an application that is capable of taking a screenshot of a portion of the screen and adds it to the clipboard using maim and xclip on Linux."""
+
 
     def screenshot_settings():
         """Opens the settings UI for screenshots.
@@ -146,4 +148,8 @@ os: linux
 @ctx_linux.action_class("user")
 class UserActionsLinux:
     def screenshot_selection():
-        actions.key("shift-printscr")
+        path = get_screenshot_path("Selection")
+        actions.user.system_command(f"maim -s {path}")
+
+    def screenshot_selection_clip():
+        actions.user.system_command("maim -s | xclip -selection clipboard -t image/png")

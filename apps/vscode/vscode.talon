@@ -25,6 +25,16 @@ bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
+focus bar: user.vscode("workbench.action.focusSideBar")
+bar journal: user.vscode("workbench.view.extension.vscode-journal-view")
+bar notes: user.vscode("workbench.view.extension.vsnotes")
+bar figma: user.vscode("workbench.view.extension.figma")
+bar pilot: user.vscode("workbench.panel.chat.view.copilot.focus")
+bar cursorless: user.vscode("workbench.view.extension.cursorless")
+bar (hub | github): user.vscode("workbench.view.extension.github-pull-requests")
+bar P R: user.vscode("github:activePullRequest.focus")
+bar actions: user.vscode("workbench.view.extension.github-actions")
+bar agent: user.vscode("workbench.action.backgroundComposer.toggleSidebar")
 
 # Symbol search
 symbol hunt [<user.text>]:
@@ -43,7 +53,19 @@ panel output: user.vscode("workbench.panel.output.focus")
 panel problems: user.vscode("workbench.panel.markers.view.focus")
 panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
+panel test: user.vscode("workbench.panel.testResults.view.focus")
+panel comments: user.vscode("workbench.action.focusCommentsPanel")
+panel zoom: user.vscode("workbench.action.toggleMaximizedPanel")
+
 focus editor: user.vscode("workbench.action.focusActiveEditorGroup")
+focus panel: user.vscode("workbench.action.focusPanel")
+
+# Splits
+focus up: user.vscode("workbench.action.focusAboveGroup")
+focus down: user.vscode("workbench.action.focusBelowGroup")
+focus left: user.vscode("workbench.action.focusLeftGroup")
+focus right: user.vscode("workbench.action.focusRightGroup")
+
 
 # Settings
 show settings: user.vscode("workbench.action.openGlobalSettings")
@@ -166,8 +188,21 @@ fold six: user.vscode("editor.foldLevel6")
 fold seven: user.vscode("editor.foldLevel7")
 
 # Git / Github (not using verb-noun-adjective pattern, mirroring terminal commands.)
+git blame: user.vscode("gitlens.toggleFileBlame")
 git branch: user.vscode("git.branchFrom")
 git branch this: user.vscode("git.branch")
+git checkout (main | mane | men | mean):
+    user.vscode("git.checkout")
+    sleep(50ms)
+    insert("main")
+    sleep(200ms)
+    insert("\n")
+git checkout (clip | paste):
+    user.vscode("git.checkout")
+    sleep(50ms)
+    edit.paste()
+    sleep(200ms)
+    insert("\n")
 git checkout [<user.text>]:
     user.vscode("git.checkout")
     sleep(50ms)
@@ -203,6 +238,8 @@ pull request: user.vscode("pr.create")
 # action: https://code.visualstudio.com/api/references/when-clause-contexts
 change next: key(alt-f5)
 change last: key(shift-alt-f5)
+change show: key(alt-f3)
+change revert: user.vscode("git.revertSelectedRanges")
 
 # Testing
 test run: user.vscode("testing.runAtCursor")
